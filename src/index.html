@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/public/apple-touch-icon.png" />
     <title>
       Fintech Solutions for Banking Apps | Accelerate Your Development
     </title>
@@ -30,18 +32,19 @@
         class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
       >
         <!-- Logo -->
-        <a href="#" class="text-2xl font-bold text-gray-800"> FintechFlow </a>
+        <a
+          href="#"
+          class="text-2xl font-bold text-gray-800 flex justify-center gap-2 items-center"
+        >
+          <img src="/public/logo.png" class="h-12" alt="profile picture" />
+          Financial Blocks
+        </a>
         <!-- Desktop Navigation -->
         <div class="hidden md:flex space-x-8 items-center">
           <a
             href="#features"
             class="text-gray-600 hover:text-gray-900 transition-colors duration-300"
             >Features</a
-          >
-          <a
-            href="#pricing"
-            class="text-gray-600 hover:text-gray-900 transition-colors duration-300"
-            >Pricing</a
           >
           <a
             href="#contact-form"
@@ -126,7 +129,7 @@
             >
             <!-- Updated href to link to the contact form -->
             <a
-              href="#contact-form"
+              href="#features"
               class="bg-transparent text-blue-600 border border-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors duration-300"
               >Explore Features</a
             >
@@ -155,24 +158,20 @@
                 class="bg-blue-100 text-blue-600 p-4 rounded-full inline-block mb-6"
               >
                 <svg
-                  class="w-8 h-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-square-terminal"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.75 17L9.25 7H15.25L14.75 17Z"
-                  ></path>
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M11 20H13M12 20V24"
-                  ></path>
+                  <path d="M7 11.5l2 2.5l2-2.5" />
+                  <path d="M14 11h.01" />
+                  <rect width="20" height="20" x="2" y="2" rx="2" ry="2" />
                 </svg>
               </div>
               <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -192,18 +191,21 @@
                 class="bg-green-100 text-green-600 p-4 rounded-full inline-block mb-6"
               >
                 <svg
-                  class="w-8 h-8"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-server"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
+                  <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                  <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                  <line x1="6" x2="6" y1="6" y2="6" />
+                  <line x1="6" x2="6" y1="18" y2="18" />
                 </svg>
               </div>
               <h3 class="text-xl font-semibold text-gray-800 mb-2">
@@ -233,7 +235,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M7 12l2 2 4-4m-6 4a9 9 0 1118 0 9 9 0 01-18 0z"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   ></path>
                 </svg>
               </div>
@@ -287,6 +289,24 @@
         </div>
       </section>
 
+      <!-- Call to Action Section -->
+      <section id="final-cta" class="bg-blue-600 text-white py-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+            Ready to Accelerate Your Banking App Development?
+          </h2>
+          <p class="text-lg mb-8 max-w-3xl mx-auto">
+            Join leading financial institutions that are leveraging our platform
+            to build the future of banking.
+          </p>
+          <a
+            href="#contact-form"
+            class="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 shadow-xl"
+            >Get Started Today</a
+          >
+        </div>
+      </section>
+
       <!-- Contact Section -->
       <section id="contact-form" class="bg-gray-50 py-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -301,27 +321,29 @@
           >
             <div class="flex flex-col items-center">
               <svg
-                class="w-12 h-12 text-blue-600 mb-2"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail text-blue-600 mb-2"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M3 8l7.893 5.262c.792.528 1.936.528 2.728 0L21 8m-2 1a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V9z"
-                ></path>
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7l-10 7-10-7" />
               </svg>
+
               <h3 class="text-xl font-semibold text-gray-800">Email</h3>
               <a
-                href="mailto:info@fintechflow.com"
+                href="mailto:info@financialblocks.net"
                 class="text-blue-600 hover:text-blue-700 transition-colors duration-300"
-                >info@fintechflow.com</a
+                >info@financialblocks.net</a
               >
             </div>
-            <div class="flex flex-col items-center">
+            <!-- <div class="flex flex-col items-center">
               <svg
                 class="w-12 h-12 text-blue-600 mb-2"
                 fill="none"
@@ -342,26 +364,8 @@
                 class="text-blue-600 hover:text-blue-700 transition-colors duration-300"
                 >+1 (800) 555-0199</a
               >
-            </div>
+            </div> -->
           </div>
-        </div>
-      </section>
-
-      <!-- Call to Action Section -->
-      <section id="final-cta" class="bg-blue-600 text-white py-20">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="text-3xl sm:text-4xl font-bold mb-4">
-            Ready to Accelerate Your Banking App Development?
-          </h2>
-          <p class="text-lg mb-8 max-w-3xl mx-auto">
-            Join leading financial institutions that are leveraging our platform
-            to build the future of banking.
-          </p>
-          <a
-            href="#contact-form"
-            class="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-colors duration-300 shadow-xl"
-            >Get Started Today</a
-          >
         </div>
       </section>
     </main>
@@ -369,20 +373,20 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-gray-400 py-12">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="mb-4">
+        <!-- <div class="mb-4">
           <a href="#" class="text-lg font-bold text-white hover:text-gray-300"
             >FintechFlow</a
           >
-        </div>
-        <div class="flex justify-center space-x-6 mb-4">
+        </div> -->
+        <!-- <div class="flex justify-center space-x-6 mb-4">
           <a href="#" class="hover:text-white transition-colors duration-300"
             >Terms of Service</a
           >
           <a href="#" class="hover:text-white transition-colors duration-300"
             >Privacy Policy</a
           >
-        </div>
-        <p>&copy; 2024 FintechFlow. All rights reserved.</p>
+        </div> -->
+        <p>&copy; 2025 Financial Blocks. All rights reserved.</p>
       </div>
     </footer>
 
